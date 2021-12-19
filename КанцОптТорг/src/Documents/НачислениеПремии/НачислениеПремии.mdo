@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3d97654b-3581-4b75-bbff-1ae6105998c5">
+  <producedTypes>
+    <objectType typeId="160bd3cf-2e4d-4ef1-883b-1858e98673ea" valueTypeId="2c970267-5376-4081-b302-1f8049e20c40"/>
+    <refType typeId="225b3d7f-3447-4eb7-80fa-b3f574098334" valueTypeId="9dffa876-f708-4f69-b782-2b2b5825a904"/>
+    <selectionType typeId="5a544322-c2a8-4e17-a470-4c5de31e1be9" valueTypeId="4d347ef1-7986-42b0-8953-cb3f8e02e472"/>
+    <listType typeId="a0a3ea8d-b370-4b3a-b7cb-187104365f6c" valueTypeId="015afc97-ccd8-4eba-994b-2d39fd1d1cc0"/>
+    <managerType typeId="f3220e9f-fc18-4da7-a528-357036d4d9be" valueTypeId="7f596533-d22e-4c75-8d8e-3d7f6363f96f"/>
+  </producedTypes>
+  <name>НачислениеПремии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисление премии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.НачислениеПремии.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>CalculationRegister.НачисленияЗП</registerRecords>
+  <registerRecords>AccumulationRegister.ЗадолжностьПередСотрудниками</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="a458e313-15e4-4d82-9203-be8db848c15e">
+    <producedTypes>
+      <objectType typeId="e4e19d32-80ca-426c-9b89-d72f22c45b97" valueTypeId="88d83ff9-8558-4477-b6e7-b2dd652b794c"/>
+      <rowType typeId="cd578620-9bff-44b5-934f-6b67030cd1d4" valueTypeId="68df40f4-af19-4ef2-8f4e-e6243feb7a48"/>
+    </producedTypes>
+    <name>Сотрудники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники</value>
+    </synonym>
+    <attributes uuid="7cf997c3-b253-4728-afd1-efef1013fb70">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="507c7215-bbab-452d-9509-8062e3391d06">
+      <name>СуммаПремии</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма премии</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

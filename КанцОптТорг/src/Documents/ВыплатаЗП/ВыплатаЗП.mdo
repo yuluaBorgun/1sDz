@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4da64e6f-26c8-4850-9ee6-d4d671fd7d2a">
+  <producedTypes>
+    <objectType typeId="96cfa59a-f291-4d1d-b82a-25c33d28645c" valueTypeId="bac1457f-f2e4-437b-9f93-b7282a3ca216"/>
+    <refType typeId="5ecf9aae-538c-49e0-92ff-5be3094a7c14" valueTypeId="48151e9e-a8eb-4359-bcd2-3bde1fe2c483"/>
+    <selectionType typeId="f6273576-fb83-48b7-8368-ed4477a76f0b" valueTypeId="c1282897-cc17-4d88-94b7-1d528faa8143"/>
+    <listType typeId="16e49b79-3560-4bbc-9c69-95d661bf30ce" valueTypeId="e7d59f0f-440d-4826-8edc-239502141003"/>
+    <managerType typeId="9094e056-e50f-4fae-b7f6-8da50e0e654c" valueTypeId="f6c32c4d-916f-44db-8102-2b22a6f0241e"/>
+  </producedTypes>
+  <name>ВыплатаЗП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выплата ЗП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВыплатаЗП.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ЗадолжностьПередСотрудниками</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="cb3d4fd5-f624-41ec-ab11-872649119870">
+    <producedTypes>
+      <objectType typeId="3b7ff186-1628-4c04-8dc7-27b4b55b4794" valueTypeId="7f2961ec-eca8-4072-b786-fe3084f59ae4"/>
+      <rowType typeId="5a5f2c2f-ed56-4da2-9293-e715cb49b747" valueTypeId="b5624056-7add-468f-a27c-62b60147d6ba"/>
+    </producedTypes>
+    <name>Сотрудники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники</value>
+    </synonym>
+    <attributes uuid="069bd796-de36-4ab6-b3bf-1c229c14503d">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="173e2d3e-b5ac-4bc5-bfb6-085b4905465e">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
